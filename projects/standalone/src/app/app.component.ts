@@ -6,6 +6,7 @@ import { Component } from "@angular/core";
   templateUrl: "./app.component.html",
   styleUrls: ["./app.component.scss"],
   standalone: true,
+  imports: [CommonModule],
   providers: [],
 })
 export class AppComponent {
