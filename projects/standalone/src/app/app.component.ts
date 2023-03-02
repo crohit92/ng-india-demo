@@ -6,7 +6,7 @@ import { Component } from "@angular/core";
   templateUrl: "./app.component.html",
   styleUrls: ["./app.component.scss"],
   standalone: true,
-  imports: [CommonModule],
+  imports: [NgSwitch, NgSwitchCase],
   providers: [],
 })
 export class AppComponent {
