@@ -1,0 +1,27 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-4 col-md-2">
+      <div class="bg-white">
+        <ul class="p-0 m-0">
+          <li class="py-3 text-align-start" style="list-style: none">
+            <a routerLink="/">Home</a>
+          </li>
+          <li class="py-3 text-align-start" style="list-style: none">
+            <a routerLink="/about-us">About us</a>
+          </li>
+          <li class="py-3 text-align-start" style="list-style: none">
+            <a routerLink="/faqs">FAQs</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-8 col-md-10">
+      <div class="bg-primary toolbar">
+        <div class="p-3 text-white">Standalone</div>
+      </div>
+      <div class="px-3">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+</div>
