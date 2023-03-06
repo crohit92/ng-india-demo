@@ -3,7 +3,6 @@ import { provideRouter } from "@angular/router";
 import { appNameToken } from "projects/module-based/src/app/app-name.token";
 import { AppComponent } from "./app/app.component";
 import { FaqsComponent } from "./app/faqs/faqs.component";
-
 bootstrapApplication(AppComponent, {
   providers: [
     {
@@ -13,10 +12,7 @@ bootstrapApplication(AppComponent, {
     provideRouter([
       {
         path: "",
-        loadChildren: () =>
-          import("./app/dashboard/dashboard.module").then(
-            (res) => res.DashboardModule
-          ),
+        loadChildren: () => import("./app/dashboard/dashboard.routes"),
       },
       {
         path: "public",
