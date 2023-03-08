@@ -1,14 +1,20 @@
 import { Routes } from "@angular/router";
+import { FaqsComponent } from "../faqs/faqs.component";
+import { DashboardComponent } from "./dashboard.component";
 
 export default [
   {
     path: "",
-    loadComponent: () =>
-      import("./dashboard.component").then((res) => res.DashboardComponent),
+    component: DashboardComponent,
     children: [
       {
         path: "home",
-        loadChildren: () => import("./home/home.route"),
+        loadComponent: () =>
+          import("./home/home.component").then((res) => res.HomeComponent),
+      },
+      {
+        path: "faqs",
+        component: FaqsComponent,
       },
     ],
   },

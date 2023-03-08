@@ -30,10 +30,6 @@ bootstrapApplication(AppComponent, {
                 (res) => res.AboutUsComponent
               ),
           },
-          {
-            path: "faqs",
-            component: FaqsComponent,
-          },
         ],
       },
     ]),
